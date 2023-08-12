@@ -1,13 +1,16 @@
 import { createAlchemyWeb3 } from "@alch/alchemy-web3";
 import contractABI from "./abi.json";
 
-
+//web3 api
 const web3 = createAlchemyWeb3(
   "https://polygon-mumbai.g.alchemy.com/v2/aC1N39LhBDnTkyZj40eYjhX5-9c73u_n"
 );
+//
+//contract Address
 const contractAddress = "0xEf7A256fA14fc31E402Fc3Cf3C2fe6729AC45873";
+//
 
-// 0x89Dd0BffCa79607c707Af41d7bFFe32c6A8a02Ec
+
 
 //call tokenURI 
 const tokenURI = async(tokenId)=>{
